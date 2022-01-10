@@ -16,7 +16,7 @@ FROM base as development
 CMD ["./mvnw", "spring-boot:run",  "-Dspring-boot.run.profiles=mysql"]
 
 FROM base as build
-RUN ./mvnw package
+RUN ["./mvnw", "package"]
 
 FROM base as production
 EXPOSE 8080
