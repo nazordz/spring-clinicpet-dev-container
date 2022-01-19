@@ -12,7 +12,7 @@ services:
       - MYSQL_PASSWORD=petclinic
       - MYSQL_DATABASE=petclinic
     volumes:
-      - "./conf.d:/etc/mysql/conf.d:ro"
+      - "./conf.d:/etc/mysql/conf.d"
   # postgres:
   #   image: postgres:13
   #   ports:
