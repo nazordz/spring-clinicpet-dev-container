@@ -26,7 +26,7 @@ services:
       - MYSQL_PASSWORD=petclinic
       - MYSQL_DATABASE=petclinic
     volumes:
-      - "mysql_config:/etc/mysql/conf.d:ro"
+      - "mysql_config:/etc/mysql/conf.d"
       - "mysql_data:/var/lib/mysql"
 volumes:
   mysql_data:
